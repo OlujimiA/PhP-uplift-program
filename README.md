@@ -1,0 +1,2 @@
+The file 'index.php' is the first assignment that was assigned to us. It has to do with echoing various data types.
+The file 'discount.php' is the second assignment that was assigned to us. It has to do with calculating the discount given to an item depending on the customer type.

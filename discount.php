@@ -4,20 +4,20 @@
         $discount = 0;
         $status = strtolower($status);
         if ($status == "premium") {
-            $new_price = $price * 0.10;
-            $discount = "at 90% off";
+            $new_price = $price * 0.25;
+            $discount = "at 75% off";
             $status = "Premium";
         } elseif($status == "gold"){
-            $new_price = $price *0.25;
-            $discount = "at 75% off";
+            $new_price = $price *0.50;
+            $discount = "at 50% off";
             $status = "Gold";
         } elseif ($status == "silver"){
-            $new_price = $price * 0.5;
-            $discount = "at 50% off";
+            $new_price = $price * 0.75;
+            $discount = "at 25% off";
             $status = "Silver";
         } elseif ($status == "bronze"){
-            $new_price = $price * 0.75;
-            $dicount = "at 25% off";
+            $new_price = $price * 0.90;
+            $dicount = "at 10% off";
             $status = "Bronze";
         } else{
             $status = "";
@@ -29,5 +29,5 @@
         <br> You have been given $discount. The price of $item is now NGN<b>$new_price</b>";
     }
 
-    echo Calcdiscount("Caprisonee", 2500, "GOLD");
+    echo Calcdiscount("Jollof rice", 2500, "GOLD");
 ?>
