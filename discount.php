@@ -1,6 +1,6 @@
 <?php
     
-    function discount($item, $price, $status = "none"){
+    function Calcdiscount($item, $price, $status = "none"){
         $discount = 0;
         $status = strtolower($status);
         if ($status == "premium") {
@@ -29,5 +29,5 @@
         <br> You have been given $discount. The price of $item is now NGN<b>$new_price</b>";
     }
 
-    echo discount("Caprisonee", 2500, "GOLD");
+    echo Calcdiscount("Caprisonee", 2500, "GOLD");
 ?>
